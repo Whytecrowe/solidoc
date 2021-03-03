@@ -1,7 +1,5 @@
 # Solidoc: Documentation Generator for Solidity
 
-[![npm version](https://badge.fury.io/js/%40thinkanddev%2Fsolidoc.svg)](https://www.npmjs.com/package/@thinkanddev/solidoc)
-
 This command-line utility creates markdown-based documentation for your Solidity project(s) for the following platforms:
 
 * Ethereum
@@ -21,13 +19,13 @@ This command-line utility creates markdown-based documentation for your Solidity
 **Global instalation**
 
 ```npm
-sudo npm install solidoc -g
+sudo yarn install @whytecrowe/solidoc -g
 ```
 
 **Project instalation**
 
 ```npm
-npm install solidoc
+yarn add @whytecrowe/solidoc
 ```
 
 **CLI Arguments**
