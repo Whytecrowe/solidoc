@@ -1,4 +1,4 @@
-# Solidoc: Documentation Generator for Solidity
+# Solidok: Documentation Generator for Solidity
 
 This command-line utility creates markdown-based documentation for your Solidity project(s) for the following platforms:
 
@@ -20,13 +20,13 @@ Now supports Solidity up to 0.7.
 **Global instalation**
 
 ```npm
-sudo yarn install @whytecrowe/solidoc -g
+sudo yarn install solidok -g
 ```
 
 **Project instalation**
 
 ```npm
-yarn add @whytecrowe/solidoc
+yarn add solidok
 ```
 
 **CLI Arguments**
@@ -42,12 +42,12 @@ yarn add @whytecrowe/solidoc
 Using a [configuration file](#configuration-file) is recommended (mostly if you want to ignore files).
 
 
-**How to Use Solidoc?**
+**How to Use solidok?**
 
 On your project root, run the following command:
 
 ```npm
-solidoc ./ ./docs true
+solidok ./ ./docs true
 ```
 
 This will generate documentation to the `docs` directory.
@@ -56,14 +56,14 @@ This will generate documentation to the `docs` directory.
 
 ```json
   "scripts": {
-    "docgen": "solidoc ./ ./docs"
+    "docgen": "solidok ./ ./docs"
   }
 ```
 
 and run:
 
 ```npm
-npm run docgen
+yarn docgen
 ```
 
 **Note**
@@ -72,7 +72,7 @@ Do not use recompilation (third argument) if you are using this on a non Truffle
 
 ## Configuration File
 
-Alternatively, you can create `solidoc.json` configuration file in your project root:
+Alternatively, you can create `solidok.json` configuration file in your project root:
 
 ```json
 {
@@ -86,21 +86,21 @@ Alternatively, you can create `solidoc.json` configuration file in your project 
 }
 ```
 
-and then call `solidoc` instead of passing any command line argument.
+and then call `solidok` instead of passing any command line argument.
 
 
 ## Overrides
 
-If you wish to change bits and pieces of the documentation generated, place `solidoc templates` on the following directory:
+If you wish to change bits and pieces of the documentation generated, place `solidok templates` on the following directory:
 
-`./.solidoc/templates/`
+`./.solidok/templates/`
 
-[Solidoc Templates](templates)
+[solidok Templates](templates)
 
 
 You can also override language literals by copying and editing `i18n` files on the following path:
 
-`./.solidoc/i18n/`
+`./.solidok/i18n/`
 
 
 

@@ -6,7 +6,7 @@ const fs = require("fs-extra");
 function read(fileName) {
   function getPath() {
     const file = path.join(__dirname, "..", "templates", fileName);
-    const override = path.join(process.cwd(), ".solidoc", "templates", fileName);
+    const override = path.join(process.cwd(), ".solidok", "templates", fileName);
 
     if(fs.existsSync(override)) {
       return override;

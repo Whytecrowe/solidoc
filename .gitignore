@@ -61,6 +61,6 @@ typings/
 .next
 .idea/workspace.xml
 .idea/vcs.xml
-.idea/solidoc.iml
+.idea/solidok.iml
 .idea/modules.xml
 .vscode/

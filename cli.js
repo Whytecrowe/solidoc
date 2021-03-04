@@ -22,7 +22,7 @@ const logger = pino({
 *************************************************************************************************/
 function getConfig() {
   function readConfig() {
-    const file = path.join(process.cwd(), "solidoc.json");
+    const file = path.join(process.cwd(), "solidok.json");
 
     if(!fs.pathExistsSync(file)) {
       return {};
@@ -74,7 +74,7 @@ if(!fs.existsSync(config.pathToRoot)) {
 
 function begin() {
   if(!fs.existsSync(buildDirectory)) {
-    logger.error("Please build your project first or run solidoc with recompilation on.");
+    logger.error("Please build your project first or run solidok with recompilation on.");
     return;
   }
 

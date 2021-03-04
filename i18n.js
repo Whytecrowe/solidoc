@@ -7,7 +7,7 @@ module.exports = {
     function getPath() {
       const language = global.config.language || "en";
       const file = path.join(__dirname, "i18n", `${language}.json`);
-      const override = path.join(process.cwd(), ".solidoc", "i18n", `${language}.json`);
+      const override = path.join(process.cwd(), ".solidok", "i18n", `${language}.json`);
 
       if(fs.existsSync(override)) {
         return override;
