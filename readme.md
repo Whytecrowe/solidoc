@@ -13,6 +13,7 @@ This command-line utility creates markdown-based documentation for your Solidity
 * Ubiq
 * Monax
 
+###Now supports Solidity up to 0.7.
 
 ## Getting Started
 
