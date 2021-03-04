@@ -1,6 +1,6 @@
 {
   "name": "solidok",
-  "version": "3.0.0",
+  "version": "3.0.2",
   "description": "Solidity Documentation Generator Extended",
   "main": "cli.js",
   "bin": {
