@@ -1,13 +1,13 @@
 {
   "name": "@whytecrowe/solidoc",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "Solidity Documentation Generator",
   "main": "cli.js",
-  "scripts": {
-    "start": "node cli.js ./ ./docs/contracts false"
-  },
   "bin": {
     "solidoc": "cli.js"
+  },
+  "scripts": {
+    "start": "node cli.js ./ ./docs/contracts false"
   },
   "keywords": [
     "solidity",
