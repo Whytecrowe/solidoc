@@ -13,21 +13,23 @@ This command-line utility creates markdown-based documentation for your Solidity
 * Ubiq
 * Monax
 
-Now supports Solidity up to 0.7.
-
+Supports Solidity up to 0.7.
+Able to also generate docs for events and state variables with tags like `@notice`, `@dev` and `@param`.
 ## Getting Started
 
 **Global instalation**
 
 ```npm
-sudo yarn install solidok -g
+yarn global add solidok
 ```
+Make sure your `yarn/global/.bin` is exported to PATH.
 
 **Project instalation**
 
 ```npm
-yarn add solidok
+yarn add solidok --dev
 ```
+
 
 **CLI Arguments**
 
@@ -42,13 +44,25 @@ yarn add solidok
 Using a [configuration file](#configuration-file) is recommended (mostly if you want to ignore files).
 
 
-**How to Use solidok?**
+**Usage**
 
-On your project root, run the following command:
+In your project root, run the following commands based on your setup:
 
+If installed globally:
 ```npm
 solidok ./ ./docs true
 ```
+
+If you have a `solidok.json` file set up, just run:
+```npm
+solidok
+```
+
+If installed to project:
+```npm
+node node_modules/.bin/solidok
+```
+
 
 This will generate documentation to the `docs` directory.
 
